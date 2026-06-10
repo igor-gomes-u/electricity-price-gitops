@@ -1,7 +1,7 @@
 image:
   repository: ghcr.io/igor88gomes/electricity-price
   tag: ""
-  digest: "sha256:a757bf099e533f00775d42d304ce2fb91d3eaefcb3fe465d28f5e92aeee27973"
+  digest: "sha256:ac83f04f524c59a94babd7c2e69351a41f5e8eab0389c235b77d2eda0e85ef42"
 
 resources:
   requests: { cpu: 200m, memory: 300Mi }
