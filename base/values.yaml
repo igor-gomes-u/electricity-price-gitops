@@ -1,5 +1,5 @@
 image:
-  repository: ghcr.io/igor88gomes/electricity-price
+  repository: ghcr.io/igor-gomes-u/electricity-price
   tag: dev-LOCAL
   digest: ""                                         
   pullPolicy: IfNotPresent

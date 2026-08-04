@@ -1,8 +1,8 @@
-[![GitOps – Validate](https://github.com/igor88gomes/electricity-price-gitops/actions/workflows/gitops-validation.yaml/badge.svg?branch=main)](https://github.com/igor88gomes/electricity-price-gitops/actions/workflows/gitops-validation.yaml)
-[![GitOps – DEV](https://github.com/igor88gomes/electricity-price-gitops/actions/workflows/update-dev.yaml/badge.svg?branch=main)](https://github.com/igor88gomes/electricity-price-gitops/actions/workflows/update-dev.yaml)
-[![GitOps – STAGING](https://github.com/igor88gomes/electricity-price-gitops/actions/workflows/promotion-handler.yaml/badge.svg?branch=main)](https://github.com/igor88gomes/electricity-price-gitops/actions/workflows/promotion-handler.yaml)
-[![GitOps – PROD](https://github.com/igor88gomes/electricity-price-gitops/actions/workflows/prod-release-handler.yaml/badge.svg?branch=main)](https://github.com/igor88gomes/electricity-price-gitops/actions/workflows/prod-release-handler.yaml)
-[![Secret Scan](https://github.com/igor88gomes/electricity-price-gitops/actions/workflows/secret-scan.yaml/badge.svg?branch=main)](https://github.com/igor88gomes/electricity-price-gitops/actions/workflows/secret-scan.yaml)
+[![GitOps – Validate](https://github.com/igor-gomes-u/electricity-price-gitops/actions/workflows/gitops-validation.yaml/badge.svg?branch=main)](https://github.com/igor-gomes-u/electricity-price-gitops/actions/workflows/gitops-validation.yaml)
+[![GitOps – DEV](https://github.com/igor-gomes-u/electricity-price-gitops/actions/workflows/update-dev.yaml/badge.svg?branch=main)](https://github.com/igor-gomes-u/electricity-price-gitops/actions/workflows/update-dev.yaml)
+[![GitOps – STAGING](https://github.com/igor-gomes-u/electricity-price-gitops/actions/workflows/promotion-handler.yaml/badge.svg?branch=main)](https://github.com/igor-gomes-u/electricity-price-gitops/actions/workflows/promotion-handler.yaml)
+[![GitOps – PROD](https://github.com/igor-gomes-u/electricity-price-gitops/actions/workflows/prod-release-handler.yaml/badge.svg?branch=main)](https://github.com/igor-gomes-u/electricity-price-gitops/actions/workflows/prod-release-handler.yaml)
+[![Secret Scan](https://github.com/igor-gomes-u/electricity-price-gitops/actions/workflows/secret-scan.yaml/badge.svg?branch=main)](https://github.com/igor-gomes-u/electricity-price-gitops/actions/workflows/secret-scan.yaml)
 
 🇬🇧 English version:
 👉 [Read in English](README.md)
@@ -35,7 +35,7 @@
 
 ## Relaterade Repository
 
-**Application (CI & artifact delivery):** [electricity-price](https://github.com/igor88gomes/electricity-price)
+**Application (CI & artifact delivery):** [electricity-price](https://github.com/igor-gomes-u/electricity-price)
 
 ---
 ## GitOps-arkitektur och promotionsflöde
