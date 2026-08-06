@@ -109,25 +109,19 @@ jobs:
           kube-linter lint rendered
 
       # conftest (OPA policies)
-            # conftest (OPA policies)
       - name: Install conftest
+        env:
+          CONFTEST_VERSION: "0.62.0"
         run: |
           set -euo pipefail
-
-          LATEST_VERSION="$(python3 - <<'PY'
-          import json, urllib.request
-          data = json.load(urllib.request.urlopen("https://api.github.com/repos/open-policy-agent/conftest/releases/latest"))
-          tag = data["tag_name"]
-          print(tag[1:] if tag.startswith("v") else tag)
-          PY
-                    )"
 
           SYSTEM="$(uname -s)"
           ARCH="$(uname -m)"
 
-          echo "Installing conftest ${LATEST_VERSION} for ${SYSTEM} ${ARCH}"
+          echo "Installing conftest ${CONFTEST_VERSION} for ${SYSTEM} ${ARCH}"
 
-          curl -sSfL "https://github.com/open-policy-agent/conftest/releases/download/v${LATEST_VERSION}/conftest_${LATEST_VERSION}_${SYSTEM}_${ARCH}.tar.gz" \
+          curl -sSfL \
+            "https://github.com/open-policy-agent/conftest/releases/download/v${CONFTEST_VERSION}/conftest_${CONFTEST_VERSION}_${SYSTEM}_${ARCH}.tar.gz" \
             -o conftest.tar.gz
 
           tar -xzf conftest.tar.gz
