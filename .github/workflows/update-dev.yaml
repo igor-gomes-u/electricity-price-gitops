@@ -121,13 +121,21 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          
+
+          cat > pr-body.md <<EOF
+          Update DEV image:
+
+          - \`${{ env.DEV_FILE }}\`
+            - tag: \`${{ steps.meta.outputs.TAG }}\`
+            - digest: \`${{ steps.meta.outputs.DIGEST }}\`
+          EOF
+
           # Use exact branch name from apply step
           PR_URL="$(gh pr create \
             --base main \
             --head "${{ steps.apply.outputs.BR }}" \
             --title "chore(gitops): DEV → ${{ steps.meta.outputs.TAG }}" \
-            --body  "Update DEV image:\n\n- \`${{ env.DEV_FILE }}\`\n  - tag: \`${{ steps.meta.outputs.TAG }}\`\n  - digest: \`${{ steps.meta.outputs.DIGEST }}\`")"
+            --body-file pr-body.md)"
 
           echo "PR_URL=$PR_URL" >> "$GITHUB_OUTPUT"
             
